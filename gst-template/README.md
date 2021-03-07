@@ -1,5 +1,14 @@
 # GStreamer template repository
 
+## NOTES
+
+- veryyy useful: https://github.com/HSU-ANT/gstpeaq/issues/7
+- for debugging plugin install see
+  - `rm ~/.cache/gstreamer-1.0/registry.aarch64.bin`
+  - `sudo rm /opt/nvidia/deepstream/deepstream-5.0/lib/gst-plugins/*ivmotd*`
+  - `GST_DEBUG=5 gst-inspect-1.0 libgstivmotd.so &> inspect.txt`
+  - now look for errors and warning when loading the plugin
+
 This git module contains template code for possible GStreamer projects.
 
 * gst-app :
